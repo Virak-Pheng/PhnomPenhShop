@@ -11,8 +11,9 @@ export default function BrandHeader() {
 
 const styles = StyleSheet.create({
   header: {
+    width: "100%",
     flexDirection: "row",
-    gap: 150,
+    // gap: 150,
     alignItems: "center",
     justifyContent: "space-between",
   },

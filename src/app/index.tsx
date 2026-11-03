@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import { colors, spacing, typography } from "../constants/theme";
 import BrandHeader from "../components/BrandHeader";
 import Button from "../components/Button";
@@ -23,7 +23,9 @@ export default function HomeScreen() {
 
       <View style={styles.footer}>
         <View style={styles.buttonContainer}>
-          <Button title="Get Started" />
+          <Button title="Get Started" 
+            onPress={()=> router.push("/products")}
+          />
         </View>
 
         <View style={styles.signInText}>

@@ -4,6 +4,7 @@ export const colors ={
     textMuted: "#A9A9A9",
     primary: "#dd2d4a",
     secondary: "#F5F5F5",
+    border: "#E0E0E0",
 } as const;
 
 export const spacing={
